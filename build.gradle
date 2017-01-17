@@ -18,7 +18,13 @@ buildscript {
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 apply plugin: 'idea'
+apply plugin: 'application'
 apply plugin: 'org.springframework.boot'
+
+jar {
+    baseName = 'dogs-app'
+    version =  '0.0.1'
+}
 
 // In this section you declare where to find the dependencies of your project
 repositories {
